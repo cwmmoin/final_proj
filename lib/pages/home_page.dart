@@ -732,7 +732,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(
-                height: 28.h,
+                height: 100.h,
               ),
               const Divider(
                 color: Colors.black,
