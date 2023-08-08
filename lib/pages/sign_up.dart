@@ -18,6 +18,7 @@ class _SignUpPageState extends State<SignUpPage> {
   final nameController = TextEditingController();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
+  final confirmPasswordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ class _SignUpPageState extends State<SignUpPage> {
         appBar: AppBar(
           leading: IconButton(
             onPressed: () {},
-            icon: Icon(MdiIcons.arrowLeft),
+            icon: Icon(MdiIcons.chevronLeft),
           ),
           title: Text(
             "Register",
@@ -76,7 +77,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           color: Color(0xff0063A7),
                         ),
                       ),
-                      hintText: "Email",
+                      hintText: "Full Name",
                       filled: false,
                     ),
                   ),
@@ -113,7 +114,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           color: Color(0xff0063A7),
                         ),
                       ),
-                      hintText: "Full Name",
+                      hintText: "Email",
                       filled: false,
                     ),
                   ),
@@ -152,7 +153,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     height: 18.h,
                   ),
                   TextFormField(
-                    controller: passwordController,
+                    controller: confirmPasswordController,
                     validator: (value) {
                       if (value == null) {
                         return 'Please Confirm Password Again';

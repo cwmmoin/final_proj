@@ -28,7 +28,7 @@ class _LogInPageState extends State<LogInPage> {
         appBar: AppBar(
           leading: IconButton(
             onPressed: () {},
-            icon: Icon(MdiIcons.arrowLeft),
+            icon: Icon(MdiIcons.chevronLeft),
           ),
           title: Text(
             "Login",

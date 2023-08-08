@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:travel_app/pages/home_page.dart';
+import 'package:travel_app/pages/hotel_page.dart';
+import 'package:travel_app/pages/login_page.dart';
+import 'package:travel_app/pages/train_page.dart';
+
+import 'pages/splash_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -20,7 +24,7 @@ class MainApp extends StatelessWidget {
           scaffoldBackgroundColor: const Color(0xffC4C4C4),
           useMaterial3: true,
         ),
-        home: const HomePage(),
+        home: const LogInPage(),
       ),
     );
   }
